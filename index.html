@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redirecting...</title>
+<script>
+    function openInNewWindow(url) {
+        window.open(url, '_blank', 'toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=100,width=800,height=600');
+    }
+
+    window.onload = function() {
+        // Open the desired URL in a brand new browser window
+        openInNewWindow("https://geekprank.com/fbi-warning/");
+        
+        // Timeout to give time for the new window to open
+        setTimeout(function() {
+            // Replace the current tab with the Chrome new tab page (manually)
+            window.location.replace("chrome://newtab/");
+        }, 1000); // Adjust the timeout delay as needed
+    };
+</script>
+</head>
+<body>
+</body>
+</html>
